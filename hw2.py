@@ -9,7 +9,7 @@ x2 = net.mul(x, x)
 y2 = net.mul(y, y)
 z2 = net.mul(z, z)
 
-o  = net.add(x2, y2)
+o = net.add(x2, y2)
 o = net.add(o, z2)
 
 net.gradient_descendent()
