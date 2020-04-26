@@ -1,6 +1,4 @@
 def printMap(m) :
-    i =0
-    j = 0
     for i in range(6):
         for j in range(8):
             print(m[i][j],end='')
@@ -17,8 +15,6 @@ def findPath(m, x, y) :
     if x>=6 or y>=8 :
         return
     if m[x][y] == '*' :
-        return
-    if m[x][y] == '+':
         return
     if m[x][y] == ' ' :
         steped(x, y)
