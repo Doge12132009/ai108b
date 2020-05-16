@@ -10,6 +10,8 @@ before=bs["before"]
 bullshit=bs["bullshit"]
 
 xxx=input("主題:")
+limit=input("字數限制:")
+limit=int(limit)
 
 dup=2
 
@@ -40,7 +42,7 @@ def newPar():
 if __name__ == "__main__":
     for x in xxx:
         tmp = str()
-        while ( len(tmp) < 1000 ) :
+        while ( len(tmp) < limit ) :
             node = random.randint(0,100)
             if node < 5:
                 tmp += newPar()
